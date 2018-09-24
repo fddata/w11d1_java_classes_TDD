@@ -8,4 +8,8 @@ public class Calculator {
         return  (intOne + intTwo);
     }
 
+    public int subtract(int intOne, int intTwo){
+        return (intOne - intTwo);
+    }
+
 }
