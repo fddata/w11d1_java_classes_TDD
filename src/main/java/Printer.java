@@ -8,4 +8,11 @@ public class Printer {
     public int getSheets() {
         return this.numberOfSheetsRemaining;
     }
+
+    public  void print(int numberOfSheets, int numberOfCopies) {
+        int sheetsRequired = numberOfSheets * numberOfCopies;
+       if (this.numberOfSheetsRemaining >= sheetsRequired){
+           this.numberOfSheetsRemaining -= sheetsRequired;
+       }
+    }
 }

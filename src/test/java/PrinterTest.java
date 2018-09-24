@@ -18,4 +18,18 @@ public class PrinterTest {
         assertEquals(100, result);
     }
 
+    @Test
+    public void canPrintTrue(){
+        printer.print(30, 3);
+        int remainingSheets = printer.getSheets();
+        assertEquals(10, remainingSheets);
+    }
+
+    @Test
+    public void canPrintFalse(){
+        printer.print(30,4);
+        int remainingSheets = printer.getSheets();
+        assertEquals(100,100);
+    }
+
 }
