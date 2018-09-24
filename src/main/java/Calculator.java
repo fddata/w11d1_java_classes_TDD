@@ -12,4 +12,12 @@ public class Calculator {
         return (intOne - intTwo);
     }
 
+    public int multiply(int intOne, int intTwo){
+        return (intOne * intTwo);
+    }
+
+    public int divide(int intOne, int intTwo){
+        return (intOne / intTwo);
+    }
+
 }

@@ -20,9 +20,21 @@ public class CalculatorTest {
         }
 
         @Test
-        public void canSubtract(){
-        int result = calculator.subtract(7,5);
-        assertEquals(2, result);
+        public void canSubtract() {
+            int result = calculator.subtract(7, 5);
+            assertEquals(2, result);
+        }
+
+        @Test
+        public void canMultiply(){
+        int result = calculator.multiply(7,5);
+        assertEquals(35, result);
+        }
+
+        @Test
+        public void canDivide(){
+            int result = calculator.divide(35, 7);
+            assertEquals(5, result);
+        }
     }
 
-}
